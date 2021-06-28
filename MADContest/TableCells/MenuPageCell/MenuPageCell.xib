@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuPageCell">
+            <connections>
+                <outlet property="highlightMark" destination="6Ub-yK-5Ly" id="Wfn-eS-ltg"/>
+                <outlet property="iconLabel" destination="sdk-HC-ds8" id="iCp-Ar-S7y"/>
+                <outlet property="titleLabel" destination="NN0-Ps-ylv" id="hik-rl-Ax6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="livephoto" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Ub-yK-5Ly">
+                    <rect key="frame" x="10" y="12" width="70" height="69.5"/>
+                    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdk-HC-ds8">
+                    <rect key="frame" x="20" y="22" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="0yt-dX-DXn"/>
+                        <constraint firstAttribute="height" constant="50" id="Zof-IE-R7f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfasdfasdfasdfasdf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN0-Ps-ylv">
+                    <rect key="frame" x="2" y="77" width="86" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.33324562819999998" green="0.33324562819999998" blue="0.33324562819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sdk-HC-ds8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0XX-VK-3X8"/>
+                <constraint firstItem="NN0-Ps-ylv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Cu-0j-kjT"/>
+                <constraint firstItem="6Ub-yK-5Ly" firstAttribute="trailing" secondItem="sdk-HC-ds8" secondAttribute="trailing" constant="10" id="3NY-TZ-ERs"/>
+                <constraint firstItem="6Ub-yK-5Ly" firstAttribute="bottom" secondItem="sdk-HC-ds8" secondAttribute="bottom" constant="10" id="7AV-gm-nzd"/>
+                <constraint firstItem="NN0-Ps-ylv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="Udm-1R-ree"/>
+                <constraint firstAttribute="trailing" secondItem="NN0-Ps-ylv" secondAttribute="trailing" constant="2" id="UeL-Yu-eSo"/>
+                <constraint firstItem="sdk-HC-ds8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-10" id="ajh-pE-fFz"/>
+                <constraint firstItem="6Ub-yK-5Ly" firstAttribute="leading" secondItem="sdk-HC-ds8" secondAttribute="leading" constant="-10" id="j5B-sy-Jr7"/>
+                <constraint firstAttribute="bottom" secondItem="NN0-Ps-ylv" secondAttribute="bottom" id="lhw-3z-ycm"/>
+                <constraint firstItem="6Ub-yK-5Ly" firstAttribute="top" secondItem="sdk-HC-ds8" secondAttribute="top" constant="-10" id="pEi-13-9SJ"/>
+                <constraint firstItem="NN0-Ps-ylv" firstAttribute="top" secondItem="sdk-HC-ds8" secondAttribute="bottom" constant="5" id="zxR-mM-8eW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-86.956521739130437" y="54.241071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="livephoto" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
